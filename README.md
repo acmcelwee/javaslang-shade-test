@@ -2,7 +2,12 @@
 
 Tests Javaslang in conjunction with the Maven shade plugin.
 
-**Usage:**
+## Prerequisites
+
+* Maven 3+
+* Java 8+
+
+## Usage
 
 Build the Uber jar
 
