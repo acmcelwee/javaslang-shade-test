@@ -26,3 +26,12 @@ The output should be
 ```bash
 HI!
 ```
+
+## Notes
+
+This project was tested on a Mac with the following environment variables set:
+
+```bash
+LANG=en_US.UTF-8
+LC_CTYPE=utf-8
+```
