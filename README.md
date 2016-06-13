@@ -4,7 +4,7 @@ Tests Javaslang in conjunction with the Maven shade plugin.
 
 ## Prerequisites
 
-* Maven 3+
+* Maven 3.0.4+
 * Java 8+
 
 ## Usage
