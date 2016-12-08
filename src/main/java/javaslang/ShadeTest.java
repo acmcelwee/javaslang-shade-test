@@ -1,10 +1,12 @@
 package javaslang;
 
-public class ShadeTest {
+import com.amazonaws.services.lambda.runtime.Context;
+import javaslang.control.Option;
 
-	public static void main(String[] args) {
-		final Function1<String, String> f = s -> s.toUpperCase();
-		final String s = f.apply("Hi!");
-		System.out.println(s);
-	}
+public class ShadeTest {
+    public String myHandler(String input, Context context) {
+        final Function1<String, String> f = String::toUpperCase;
+        Option.of(input).map(f::apply).forEach(System.out::println);
+        return Option.of(input).map(f::apply).getOrElse("<empty>");
+  }
 }
